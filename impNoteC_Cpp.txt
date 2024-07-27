@@ -1,0 +1,30 @@
+NOTE: (Important)
+When you compile C++ code, you should use g++, which is specifically designed for C++. The gcc compiler is primarily for C code and does not automatically link against the C++ standard libraries. As a result, when you try to use C++ features like std::cout, the linker fails to find the necessary definitions, leading to the "undefined reference" errors
+
+----------------------------------------------
+To run executed file:
+    > .\fileName.extension
+
+    For example - .\twoProject.exe
+----------------------------------------------
+
+    -- For C++ Only --
+1. To compile C++ code:
+    > g++ fileName.extension
+
+2. To compile and output an executable file.
+    > g++ fileName.extension -o fileName
+
+For example - To compile 'twoProject.cpp' and outout an executable named 'twoProject'.
+    > g++ twoProject.cpp -o twoProject
+
+   -- For C Only --
+1. To compile C code:
+    > gcc fileName.extension
+
+2. To compile and output an executable file.
+    > gcc fileName.extension -o fileName
+
+For example - To compile 'twoProject.c' and outout an executable named 'twoProject'.
+    > gcc twoProject.c -o twoProject
+
